@@ -1,7 +1,9 @@
 # NetPractice
 
 This practical exercise helps develop a deeper understanding of how routing and network division work in real-world scenarios.
+
 Model TCP/IP - 4 layers, model OSI - 7 layers.
+
 | Layer    | Description                                  |
 |----------|----------------------------------------------|
 | Layer 4  | Web browser, email clients                  |
@@ -11,6 +13,7 @@ Model TCP/IP - 4 layers, model OSI - 7 layers.
 
 IPv4 - 32 bits
 IPv6 - 128 bits
+
 **Network Address** – the first address in the network, indicates the beginning of the address range of a given network.
 
 **Broadcast Address** – the last address in the network, used for sending messages or packets to all devices in that network simultaneously.
