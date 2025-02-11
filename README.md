@@ -31,6 +31,23 @@ IPv6 - 128 bits
 
 **IP Header** – a part of the IP packet that contains essential information required for the correct transmission of data across the network. It manages the transmission of the packet through the network, ensuring it reaches its destination correctly and as intended.
 
+If you have IP address 10.20.4.13 with a /29 subnet mask:
+
+1. 32 - 29 = 3 → The last 3 bits are zeros: 11111111.11111111.11111111.11111000
+2. This means the subnet mask is 255.255.255.248.
+3. Perform a bitwise AND operation between 10.20.4.13 and 255.255.255.248.
+4. After the operation, the network address is 10.20.4.8.
+5. 2^3 = 8 (this represents the number of addresses per subnet).
+6. 10.20.4.8 + 2^3 gives the broadcast address, which is 10.20.4.15.
+7. 8 - 2 = 6, which represents the number of available IP addresses for hosts.
+8. The available host IP range is from 10.20.4.9 to 10.20.4.14.
+
+- **Network ID:** `10.20.4.8`
+- **First ID:** `10.20.4.9`
+- **Last ID:** `10.20.4.14`
+- **Broadcast ID:** `10.20.4.15`
+- **Next ID:** `10.20.4.16`
+
 ### Subnetting:
 For example: Our network is 158.46.67.0/26
 
