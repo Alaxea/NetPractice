@@ -58,20 +58,20 @@ The number of available IP addresses in this network is 2^6 = 64 addresses (incl
 
 2. Determining the Subnet Mask
 The subnet mask for /26 is:
-In binary: 11111111.11111111.11111111.11000000
-In decimal: 255.255.255.192
++ In binary: 11111111.11111111.11111111.11000000
++ In decimal: 255.255.255.192
 
 3. Subnet Division
 To divide the 158.46.67.0/26 network into smaller subnets, you need to "borrow" bits from the host part and allocate them to the network part. The more bits you borrow, the more subnets you get, but each subnet will have fewer available IP addresses.
 
 Example: Dividing into 4 subnets
-To get 4 subnets, you need to borrow 2 bits from the host part (because 2^2 = 4).
-The new subnet mask will have a length of /28 (26 + 2 = 28).
++ To get 4 subnets, you need to borrow 2 bits from the host part (because 2^2 = 4).
++ The new subnet mask will have a length of /28 (26 + 2 = 28).
 
 4. Calculating Subnet Ranges
 For a /28 mask:
-The number of available IP addresses in each subnet: 2^4 = 16 (including the network address and broadcast address).
-The subnet increment (step) is 16 (since each subnet has 16 addresses).
++ The number of available IP addresses in each subnet: 2^4 = 16 (including the network address and broadcast address).
++ The subnet increment (step) is 16 (since each subnet has 16 addresses).
 
 List of subnets:
 * 158.46.67.0 – 158.46.67.15
@@ -80,14 +80,14 @@ List of subnets:
 * 158.46.67.48 – 158.46.67.63
 
 Each subnet has 16 IP addresses, with:
-The first one address being the network address (e.g., 158.46.67.0).
-The last one address being the broadcast address (e.g., 158.46.67.15).
-The fourteen addresses available for hosts.
++ The first one address being the network address (e.g., 158.46.67.0).
++ The last one address being the broadcast address (e.g., 158.46.67.15).
++ The fourteen addresses available for hosts.
 
 5. Other Subnetting Options:
-You can divide the 158.46.67.0/26 network into a different number of subnets, depending on your needs:
-The eight subnets: Borrow 3 bits (new mask /29), each subnet will have 8 addresses.
-The sixteen subnets: Borrow 4 bits (new mask /30), each subnet will have 4 addresses.
++ You can divide the 158.46.67.0/26 network into a different number of subnets, depending on your needs:
++ The eight subnets: Borrow 3 bits (new mask /29), each subnet will have 8 addresses.
++ The sixteen subnets: Borrow 4 bits (new mask /30), each subnet will have 4 addresses.
 
 ### Topics covered
 - IPv4 address calculations
