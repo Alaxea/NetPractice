@@ -33,6 +33,7 @@ IPv6 - 128 bits
 **IP Header** – a part of the IP packet that contains essential information required for the correct transmission of data across the network. It manages the transmission of the packet through the network, ensuring it reaches its destination correctly and as intended.
 
 ![Subnet cheat sheet](https://i.pinimg.com/originals/7c/98/5b/7c985b0e47c09329458fa17edaab29c6.png)
+
 If you have IP address 10.20.4.13 with a /29 subnet mask:
 
 1. 32 - 29 = 3 → The last 3 bits are zeros: 11111111.11111111.11111111.11111000
