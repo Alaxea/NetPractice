@@ -6,7 +6,7 @@ Model TCP/IP - 4 layers, model OSI - 7 layers.
 | Layers  | Header 2                         |
 |---------|----------------------------------
 | Layer 4 | web browser, email clients       |
-| Layer 3   TCP(80(HTTP), 443(HTTPS),
+| Layer 3 | TCP(80(HTTP), 443(HTTPS),
 |           25(SMTP)) UDP(53(DNS), 67(DHCP)) |
 | Layer 2 | Routing i adresacja IP           |
 | Layer 1 | Ethernet cables                  |
